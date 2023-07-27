@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# this script prints info about the school file
+
+file=school
+
+if [ -f "$file" ]; then
+	echo "school file exists"
+else
+	echo "school file does not exist"
+fi
