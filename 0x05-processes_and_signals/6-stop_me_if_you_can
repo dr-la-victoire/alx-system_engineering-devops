@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script stops a process running without using kill
+
+
+pkill 4-to_infinity_and_beyond
