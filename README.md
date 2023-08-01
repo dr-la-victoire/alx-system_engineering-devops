@@ -5,3 +5,4 @@ This is the repository for all the projects for the ALX System Engineering Proje
 2) 0x01-shell_permissions: which deals with adding permissions to files with the chmod, changing ownership of files with the chown,superuser stuff with the sudo and other aspects of the shell scripting that deal with file security.
 3) This task focuses on loops and other exciting parts of shell scripting
 4) Now, we're learning about processes in Bash scripting
+0x06. Regular expression: Regular expressinos are just simple expressions you type for search and replace functions to manipulate strings and texts
