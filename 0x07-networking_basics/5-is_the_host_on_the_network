@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script pings an IP address passed as argument
+
+count=1
+if [ $# -eq 0 ]; then
+	exit 1
+elif [ $# -gt 1 ]; then
+	exit 1
+fi
+
+while [ $count -le 5 ]; do
+	ping $1
+	if [ $count -eq 5 ]; then
+		break
+	fi
+	count=$((count + 1 ))
+done
+exit 0
