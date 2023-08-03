@@ -7,3 +7,4 @@ This is the repository for all the projects for the ALX System Engineering Proje
 4) Now, we're learning about processes in Bash scripting
 0x06. Regular expression: Regular expressinos are just simple expressions you type for search and replace functions to manipulate strings and texts
 5) 0x07. Networking basics #0: Here we learn about networking, OSI, LAN & WAN, MAC and IP Addresses, HTTPS etc
+6) 0x08. Networking basics #1: Here we learned about hostfiles
