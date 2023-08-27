@@ -13,4 +13,4 @@ Link to image: https://ibb.co/7gRZCsV
 * The server is communicating with the user through the HTTP
 
 * Because there is only one server, it could serve as a single point of failure as too much traffic can crash the server.
-There is no load balancer. 
+There is no load balancer to maintain the incoming traffic. 

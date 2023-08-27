@@ -4,4 +4,6 @@ Link to image: https://ibb.co/YBhBMnZ
 
 * The load balancer is added to transfer excess traffic between the two servers.
 
+* The load balancing algorithm works by checking which server has the smallest traffic and sends incoming traffic there. 
 
+* The active/active server clustering is different from the active/passive one as the two servers will actively work together to control traffic, while in the active/passive one of the servers will wait, to handle any redundancy from the first server.
