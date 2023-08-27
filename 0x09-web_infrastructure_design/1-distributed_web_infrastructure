@@ -1,0 +1,7 @@
+Link to image: https://ibb.co/YBhBMnZ
+
+* The second server is added so that more traffic can be diverted to the supporting server to prevent the first one from crashing from excess traffic.
+
+* The load balancer is added to transfer excess traffic between the two servers.
+
+

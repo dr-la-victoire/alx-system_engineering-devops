@@ -1,0 +1,16 @@
+Link to image: https://ibb.co/7gRZCsV
+
+* A server is a computer with very high processing power, that serves as some form of storage for the database, codebase and othe servers that help to answer browser requests.
+
+* The domain name translates the numeric IP address into simple text names humans can understand.
+
+* The 'www' in www.foobar.com is the DNS A record because it will resolve the domain name to its IP address.
+
+* The web server answers browser answers browser requests by transferring the web files from the server to the user.
+
+* The application server handles the logic behind the file transfer.
+
+* The server is communicating with the user through the HTTP
+
+* Because there is only one server, it could serve as a single point of failure as too much traffic can crash the server.
+There is no load balancer. 
