@@ -4,5 +4,5 @@
 sudo apt-get update
 sudo apt-get install -y nginx
 echo "Hello World!" | sudo tee /var/www/html/index.html
-sudo sed -i '/location \/redirect_me {/!b;n;c\\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4' /etc/nginx/nginx.conf
+sudo sed -i '/location \/redirect_me {/!b;n;c\\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4' /etc/nginx/sites-enabled/default
 sudo service nginx restart
