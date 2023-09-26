@@ -4,5 +4,21 @@
 sudo apt-get update
 sudo apt-get install -y nginx
 echo "Hello World!" | sudo tee /var/www/html/index.html
-sudo sed -i '/location \/redirect_me {/!b;n;c\\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4' /etc/nginx/sites-enabled/default
+text="server {
+		listen 80 default_server;
+        	listen [::]:80 default_server;
+
+		root /var/www/html;
+
+		server_name lavictoire.tech;
+
+		location / {
+				try_files $uri $uri/ =404;
+			}
+
+		location = /redirect_me {
+				return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+			}
+	}"
+bash -c "echo -e '$text' > /etc/nginx/sites-enabled/default"
 sudo service nginx restart
