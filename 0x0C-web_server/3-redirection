@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script configures the Nginx to redirect to another URL
+# It does the permanent redirection (301)
+
+sudo apt-get update
+sudo apt-get install -y nginx
+echo "Hello World!" | sudo tee /var/www/html/index.html
+sudo sed -i '/server {/a \ location /redirect_me {\n return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; }' /etc/nginx/sites-enabled/default
+sudo service nginx restart
