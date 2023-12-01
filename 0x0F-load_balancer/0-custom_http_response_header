@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# We're creating a new server identical to the previous with a custom header
-
-sudo apt-get update
-sudo apt-get install -y nginx
-echo "Hello World!" | sudo tee /var/www/html/index.html
-echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
-sed -i "s/include \/etc\/nginx\/sites-enabled\/\*;/include \/etc\/nginx\/sites-enabled\/\*;\n\tadd_header X-Served-By \"$HOSTNAME\";/" /etc/nginx/nginx.conf
-sudo service nginx restart
