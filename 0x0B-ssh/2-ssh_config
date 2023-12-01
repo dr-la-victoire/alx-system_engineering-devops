@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# This script configures the SSH so you can connect without a password
-
-Host myserver 
-HostName 100.26.231.31
-User ubuntu
-IdentityFile ~/.ssh/school
