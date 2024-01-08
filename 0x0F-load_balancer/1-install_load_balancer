@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Configures a new machine to be act as a load balancer btw two servers
+
+web-01="3.85.175.206"
+web-02="54.209.120.44"
+sudo apt update
+sudo apt -y install haproxy
+
+sed -i "/^defaults$/ a\ \tbalance roundrobin" /etc/haproxy/haproxy.cfg
+sed -i "/^frontend http_front$/ a\ \tbind *:80 a\ \tdefault_backend http_backend" /etc/haproxy/haproxy.cfg
+sed -i "/^backend http_back$/ a\ \tserver web-01 $web-01 check a\ \tserver web-02 $web-02 check" /etc/haproxy/haproxy.cfg
+
+sudo service haproxy reload
