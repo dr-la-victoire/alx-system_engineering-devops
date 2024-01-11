@@ -17,10 +17,10 @@ backend the_back
         server 144516-web-01 100.25.109.44:80 check
         server 144516-web-02 34.239.248.185:80 check
 "
-echo "$server" | sudo tee /etc/haproxy/haproxy.cfg
+echo "$server" | sudo tee -a /etc/haproxy/haproxy.cfg
 
 # configuring haproxy to work with an init file
-echo "ENABLED=1" | sudo tee /etc/default/haproxy
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
 # restarting haproxy to confirm the changes
 sudo service haproxy restart
