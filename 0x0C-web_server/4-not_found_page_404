@@ -18,6 +18,6 @@ echo "Ceci n'est pas une page" | sudo tee /var/www/html/error.html
 
 # configuring nginx to load the page on error
 string="listen 80 default_server;\n\terror_page 404 \/error.html;\n\tlocation = \/error.html {\n\t\troot \/var\/www\/html;\n\tinternal;\n\t}"
-sudo sed -i "s/listen 80 default_server;/$string/" etc/nginx/sites-enabled/default
+sudo sed -i "s/listen 80 default_server;/$string/" /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
