@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Installing apache2 to get the swrver to work
+
+sudo apt update
+sudo apt install apache2
+sudo service apache2 start
