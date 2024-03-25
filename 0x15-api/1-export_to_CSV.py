@@ -20,6 +20,6 @@ if __name__ == "__main__":
     with open(csv, 'w') as csvfile:
         for res in data:
             csvfile.write(
-                    "{}, {}, {}, {}\n".format(
+                    '"{}", "{}", "{}", "{}"\n'.format(
                         emp_id, username, res.get(
                             'completed'), res.get('title')))
