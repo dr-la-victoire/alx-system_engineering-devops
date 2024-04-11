@@ -2,6 +2,7 @@
 """This module queries the Reddit API to get the 10 hot posts of a subreddit"""
 import requests
 
+
 def top_ten(subreddit):
     """Prints the number of subscribbers a subreddit has"""
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
