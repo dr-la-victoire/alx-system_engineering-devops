@@ -3,7 +3,7 @@
 $file_to_edit = '/var/www/html/wp-settings.php'
 
 file_line { 'replace_phpp_with_php':
-  path  => $file_to_edit,
-  line  => 's/phpp/php/g'
+  path => $file_to_edit,
+  line => 's/phpp/php/g'
 }
 
