@@ -1,9 +1,6 @@
 # A Puppet manifest that fixes the Apache error for the web stack project
 
-$file_to_edit = '/var/www/html/wp-settings.php'
-
-file_line { 'replace_phpp_with_php':
-  path => $file_to_edit,
-  line => 's/phpp/php/g'
+exec { 'replace_line':
+  command => "sed -i 's/phpp/php/g' /var/www/html/wp-settings.php"
 }
 
