@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This is a Bash Script that configures a new server to the stated requirements
+
+sudo apt -y update
+sudo apt install -y nginx
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx start
